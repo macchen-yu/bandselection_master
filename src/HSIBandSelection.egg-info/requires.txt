@@ -1,0 +1,12 @@
+matplotlib
+numpy
+opencv-python
+statsmodels
+tqdm
+h5py
+pyodbc
+regex
+torchsummary
+python-dotenv
+omegaconf
+pandas
