@@ -158,7 +158,7 @@ def process_data(dataset: Dataset, flag_average=True, selection=None, transform=
     return Dataset(train_x, train_y, indexes, dataset.name)
 
 
-def load_predefined_data(flag_average=True, median=False, nbands=np.infty, method='GSS', selection=None,
+def load_predefined_data(flag_average=True, median=False, nbands=np.inf, method='GSS', selection=None,
                          transform=False, data='', vifv=0, pca=False, pls=False, normalization=False, printInf=False):
     """Load one of the satellite HSI datasets"""
     compressed = False  # Flag used to load the compressed datasets
