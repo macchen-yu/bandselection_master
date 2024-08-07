@@ -147,4 +147,6 @@ class CNNStrategy(ModelStrategy):
         return ytest, ypred
 
     def loadModelStrategy(self, path):
-        self.model.network.load_state_dict(torch.load(path))
+        # self.model.network.load_state_dict(torch.load(path))
+        self.model.network.load_state_dict(torch.load(path, weights_only=True))
+
