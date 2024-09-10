@@ -1,0 +1,7 @@
+# 导出环境
+conda env export --no-builds > environment.yml
+
+# 複製环境
+conda env create -f environment.yml
+
+
