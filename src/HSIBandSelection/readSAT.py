@@ -18,6 +18,10 @@ def loadata(name, compressed=False):
             dat = sio.loadmat(os.path.join(os.path.dirname(__file__), 'Data', 'Indian_pines_corrected.mat'))['indian_pines_corrected']
         label = sio.loadmat(os.path.join(os.path.dirname(__file__), 'Data', 'Indian_pines_gt.mat'))['indian_pines_gt']
         return dat, label
+    elif name == 'fx17_Fianl':
+        dat = sio.loadmat(os.path.join(os.path.dirname(__file__), 'Data', "fx17_Fianl.mat"))['fx17_Fianl']
+        label = sio.loadmat(os.path.join(os.path.dirname(__file__),'Data', 'fx17_Fianl_gt.mat'))['fx17_Fianl_gt']
+        return dat, label
     elif name == 'SA':
         dat = sio.loadmat(os.path.join(os.path.dirname(__file__), 'Data', 'Salinas_corrected' + comp + '.mat'))['salinas_corrected']
         label = sio.loadmat(os.path.join(os.path.dirname(__file__), 'Data', 'Salinas_gt.mat'))['salinas_gt']
